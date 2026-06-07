@@ -48,7 +48,7 @@ Developed with a focus on hardware-software integration, low-latency I2C communi
 [ MQ135 Sensor ] --(ADC)--> |--> [ ESP32-S3 MCU ] --(TLS/MQTT)--> [ Azure IoT Hub ]
 [ OLED Display ] <-(I2C)--  |           |
                             |--(PWM)--> [ Cooling Fan ]
-
+```
 
 ⚙️ Build and Run Instructions
 1. Prerequisites
@@ -60,7 +60,7 @@ To prevent exposing sensitive credentials, this repository uses a separate secre
 Copy the template file: cp main/secrets_example.h main/secrets.h
 
 Update main/secrets.h with your Wi-Fi credentials and Azure connection strings:
-
+```
 #ifndef SECRETS_H
 #define SECRETS_H
 
@@ -72,14 +72,16 @@ Update main/secrets.h with your Wi-Fi credentials and Azure connection strings:
 #define SECRET_AZURE_PASSWORD "your_sas_token"
 
 #endif
+```
 
 3. Flash and Monitor
 Use the ESP-IDF tools to build, flash, and open the serial monitor:
 
 Bash
+```
 idf.py build
 idf.py -p (YOUR_PORT) flash monitor
-
+```
 
 
 📈 Sample Telemetry Output
