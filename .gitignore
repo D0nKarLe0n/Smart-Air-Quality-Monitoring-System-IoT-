@@ -5,6 +5,6 @@ build/
 *.bin
 *.elf
 
-# Файл з твоїми паролями та токенами (якщо він називається так)
+# Files with passwords and tokens
 config.h
 secrets.h
