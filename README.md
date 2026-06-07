@@ -93,3 +93,8 @@ JSON
   "voc": 530,
   "fan_pwm": 0
 }
+
+
+
+https://github.com/user-attachments/assets/712cf153-1dc3-45b7-8482-522faaeb89f7
+
